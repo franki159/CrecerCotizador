@@ -22,6 +22,7 @@ namespace System.Domain.Entities.Mantenimiento
         public Single NTASAMERCSOBSI { get; set; }
         public String ESTADO { get; set; }
         public String NESTADO { get; set; }
+        public Decimal NVIGENCIA { get; set; }
         public String FECHA_REGISTRO { get; set; }
     }
 

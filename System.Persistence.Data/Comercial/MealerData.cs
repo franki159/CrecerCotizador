@@ -405,6 +405,29 @@ namespace System.Persistence.Data.Comercial
 
             return entityErrores;
         }
+        public IEnumerable<LST_REPORTE_VARIABLE_MOR> GetReporteVariableMor(PARAMS_GET_MEALER objParameters)
+        {
+            IEnumerable<LST_REPORTE_VARIABLE_MOR> entityErrores = null;
+            List<OracleParameter> parameters = new List<OracleParameter>();
+
+            parameters.Add(new OracleParameter("P_IDVARIABLE", OracleDbType.Int32, objParameters.P_IDLOTE, ParameterDirection.Input));
+            parameters.Add(new OracleParameter("C_TABLE", OracleDbType.RefCursor, ParameterDirection.Output));
+
+            using (OracleDataReader dr = (OracleDataReader)this.ExecuteByStoredProcedure("RTA_PKG_MELER_COTIZADOR.RTA_PRO_REPORTE_VARIABLE_MOR", parameters))
+            {
+                try
+                {
+                    entityErrores = dr.ReadRows<LST_REPORTE_VARIABLE_MOR>();
+                }
+                catch (Exception ex)
+                {
+                    Utilities.GuardarLog("Error al listar las Garantías Constituidas:" + ex.Message);
+                    throw new Exception();
+                }
+            }
+
+            return entityErrores;
+        }
 
         public IEnumerable<LST_REPORTE_VARIABLE_DET_PROD> GetReporteVariableDetProd(PARAMS_GET_MEALER objParameters)
         {

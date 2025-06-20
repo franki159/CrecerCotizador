@@ -143,31 +143,32 @@ D:\Apps\Mealer\System.Domain.Entities\obj\Debug\System.Domain.Entities.csproj.Co
 D:\Apps\Mealer\System.Domain.Entities\obj\Debug\System.Domain.Entities.dll
 D:\Apps\Mealer\System.Domain.Entities\obj\Debug\System.Domain.Entities.pdb
 D:\Apps\Mealer\System.Domain.Entities\obj\Debug\System.Domain.Entities.csproj.AssemblyReference.cache
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Domain.Entities\bin\Debug\System.Domain.Entities.dll.config
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Domain.Entities\bin\Debug\System.Domain.Entities.dll
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Domain.Entities\bin\Debug\System.Domain.Entities.pdb
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Domain.Entities\bin\Debug\DocumentFormat.OpenXml.dll
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Domain.Entities\bin\Debug\ExcelDataReader.DataSet.dll
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Domain.Entities\bin\Debug\ExcelDataReader.dll
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Domain.Entities\bin\Debug\ServiceStack.Client.dll
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Domain.Entities\bin\Debug\ServiceStack.Common.dll
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Domain.Entities\bin\Debug\ServiceStack.dll
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Domain.Entities\bin\Debug\ServiceStack.Interfaces.dll
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Domain.Entities\bin\Debug\ServiceStack.Text.dll
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Domain.Entities\bin\Debug\System.Buffers.dll
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Domain.Entities\bin\Debug\System.Memory.dll
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Domain.Entities\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Domain.Entities\bin\Debug\DocumentFormat.OpenXml.xml
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Domain.Entities\bin\Debug\ExcelDataReader.xml
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Domain.Entities\bin\Debug\ExcelDataReader.DataSet.xml
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Domain.Entities\bin\Debug\ServiceStack.xml
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Domain.Entities\bin\Debug\ServiceStack.Client.xml
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Domain.Entities\bin\Debug\ServiceStack.Common.xml
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Domain.Entities\bin\Debug\ServiceStack.Text.xml
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Domain.Entities\bin\Debug\System.Buffers.xml
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Domain.Entities\bin\Debug\System.Memory.xml
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Domain.Entities\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Domain.Entities\obj\Debug\System.Domain.Entities.csproj.CoreCompileInputs.cache
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Domain.Entities\obj\Debug\System.Domain.Entities.csproj.CopyComplete
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Domain.Entities\obj\Debug\System.Domain.Entities.dll
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Domain.Entities\obj\Debug\System.Domain.Entities.pdb
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Domain.Entities\bin\Debug\System.Domain.Entities.dll.config
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Domain.Entities\bin\Debug\System.Domain.Entities.dll
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Domain.Entities\bin\Debug\System.Domain.Entities.pdb
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Domain.Entities\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Domain.Entities\bin\Debug\ExcelDataReader.DataSet.dll
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Domain.Entities\bin\Debug\ExcelDataReader.dll
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Domain.Entities\bin\Debug\ServiceStack.Client.dll
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Domain.Entities\bin\Debug\ServiceStack.Common.dll
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Domain.Entities\bin\Debug\ServiceStack.dll
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Domain.Entities\bin\Debug\ServiceStack.Interfaces.dll
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Domain.Entities\bin\Debug\ServiceStack.Text.dll
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Domain.Entities\bin\Debug\System.Buffers.dll
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Domain.Entities\bin\Debug\System.Memory.dll
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Domain.Entities\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Domain.Entities\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Domain.Entities\bin\Debug\ExcelDataReader.xml
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Domain.Entities\bin\Debug\ExcelDataReader.DataSet.xml
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Domain.Entities\bin\Debug\ServiceStack.xml
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Domain.Entities\bin\Debug\ServiceStack.Client.xml
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Domain.Entities\bin\Debug\ServiceStack.Common.xml
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Domain.Entities\bin\Debug\ServiceStack.Text.xml
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Domain.Entities\bin\Debug\System.Buffers.xml
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Domain.Entities\bin\Debug\System.Memory.xml
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Domain.Entities\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Domain.Entities\obj\Debug\System.Domain.Entities.csproj.AssemblyReference.cache
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Domain.Entities\obj\Debug\System.Domain.Entities.csproj.CoreCompileInputs.cache
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Domain.Entities\obj\Debug\System.Domain.Entities.csproj.CopyComplete
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Domain.Entities\obj\Debug\System.Domain.Entities.dll
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Domain.Entities\obj\Debug\System.Domain.Entities.pdb

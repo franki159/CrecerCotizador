@@ -320,6 +320,7 @@ namespace Web.Controllers.Report
         [HttpGet]
         public FileContentResult ReporteVariableDet(PARAMS_GET_MEALER objParameters)
         {
+            
             string fileReportName = string.Format("Reporte {0}", "Reporte Variables");
             MealerBusiness oMealerBusiness = new MealerBusiness();
             IEnumerable<LST_REPORTE_VARIABLE_DET> eEntidadResult = null;
@@ -338,17 +339,70 @@ namespace Web.Controllers.Report
             dsSecurityUser.Name = "dsVariable";
             dsSecurityUser.Value = eEntidadResult;
 
+
+
+            IEnumerable<LST_REPORTE_VARIABLE_MOR> eEntidadResult2 = null;
+            try
+            {
+                eEntidadResult2 = oMealerBusiness.GetReporteVariableMor(objParameters);
+                //eEntidadResult2 = oMealerBusiness.GetReporteVariableDetProd(objParameters);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception();
+            }
+
+            ReportDataSource dsSecurityUser2 = new ReportDataSource();
+            dsSecurityUser2.Name = "dsMortalidad";
+            dsSecurityUser2.Value = eEntidadResult2;
+
             //ReportDataSource dsSecurityUser = new ReportDataSource();
             //dsSecurityUser.Name = "dsVariable";
             //dsSecurityUser.Value = eEntidadResult;
 
-            IEnumerable<ReportDataSource> datasets = new List<ReportDataSource> { dsSecurityUser };
+            IEnumerable<ReportDataSource> datasets = new List<ReportDataSource> { dsSecurityUser, dsSecurityUser2 };
 
             ReportParameter p1 = new ReportParameter("pNameReport", "Reporte Lista de Variables");
 
             IEnumerable<ReportParameter> parameters = new List<ReportParameter> { p1 }; //, p2, p3 };
 
             return this.ReportRender(Server.MapPath("~/Reports/Formulario/ReporteVariable.rdlc"),
+                        fileReportName,
+                        enuReportFileFormat.EXCEL, datasets, parameters);
+        }
+        [HttpGet]
+        public FileContentResult ReporteVariableMor(PARAMS_GET_MEALER objParameters)
+        {
+
+            string fileReportName = string.Format("Reporte {0}", "Reporte Mortalidad");
+            MealerBusiness oMealerBusiness = new MealerBusiness();
+            IEnumerable<LST_REPORTE_VARIABLE_MOR> eEntidadResult = null;
+            //IEnumerable<LST_REPORTE_VARIABLE_DET_PROD> eEntidadResult2 = null;
+            try
+            {
+                eEntidadResult = oMealerBusiness.GetReporteVariableMor(objParameters);
+                //eEntidadResult2 = oMealerBusiness.GetReporteVariableDetProd(objParameters);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception();
+            }
+
+            ReportDataSource dsSecurityUser = new ReportDataSource();
+            dsSecurityUser.Name = "dsMortalidad";
+            dsSecurityUser.Value = eEntidadResult;
+
+            //ReportDataSource dsSecurityUser = new ReportDataSource();
+            //dsSecurityUser.Name = "dsVariable";
+            //dsSecurityUser.Value = eEntidadResult;
+
+            IEnumerable<ReportDataSource> datasets = new List<ReportDataSource> { dsSecurityUser };
+
+            ReportParameter p1 = new ReportParameter("pNameReport", "Reporte de Mortalidad");
+
+            IEnumerable<ReportParameter> parameters = new List<ReportParameter> { p1 }; //, p2, p3 };
+
+            return this.ReportRender(Server.MapPath("~/Reports/Formulario/ReporteBloque3.rdlc"),
                         fileReportName,
                         enuReportFileFormat.EXCEL, datasets, parameters);
         }

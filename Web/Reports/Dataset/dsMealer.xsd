@@ -152,6 +152,22 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="dsMortalidad" msprop:Generator_TableClassName="dsMortalidadDataTable" msprop:Generator_TableVarName="tabledsMortalidad" msprop:Generator_RowChangedName="dsMortalidadRowChanged" msprop:Generator_TablePropName="dsMortalidad" msprop:Generator_RowDeletingName="dsMortalidadRowDeleting" msprop:Generator_RowChangingName="dsMortalidadRowChanging" msprop:Generator_RowEvHandlerName="dsMortalidadRowChangeEventHandler" msprop:Generator_RowDeletedName="dsMortalidadRowDeleted" msprop:Generator_RowClassName="dsMortalidadRow" msprop:Generator_UserTableName="dsMortalidad" msprop:Generator_RowEvArgName="dsMortalidadRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CORRELATIVOOPERACION" msprop:Generator_ColumnVarNameInTable="columnCORRELATIVOOPERACION" msprop:Generator_ColumnPropNameInRow="CORRELATIVOOPERACION" msprop:Generator_ColumnPropNameInTable="CORRELATIVOOPERACIONColumn" msprop:Generator_UserColumnName="CORRELATIVOOPERACION" type="xs:string" minOccurs="0" />
+              <xs:element name="NROOPERACION" msprop:Generator_ColumnVarNameInTable="columnNROOPERACION" msprop:Generator_ColumnPropNameInRow="NROOPERACION" msprop:Generator_ColumnPropNameInTable="NROOPERACIONColumn" msprop:Generator_UserColumnName="NROOPERACION" type="xs:string" minOccurs="0" />
+              <xs:element name="STIPOPERSONA" msprop:Generator_ColumnVarNameInTable="columnSTIPOPERSONA" msprop:Generator_ColumnPropNameInRow="STIPOPERSONA" msprop:Generator_ColumnPropNameInTable="STIPOPERSONAColumn" msprop:Generator_UserColumnName="STIPOPERSONA" type="xs:string" minOccurs="0" />
+              <xs:element name="SNOMBRE" msprop:Generator_ColumnVarNameInTable="columnSNOMBRE" msprop:Generator_ColumnPropNameInRow="SNOMBRE" msprop:Generator_ColumnPropNameInTable="SNOMBREColumn" msprop:Generator_UserColumnName="SNOMBRE" type="xs:string" minOccurs="0" />
+              <xs:element name="NEDADANIOPERSONA" msprop:Generator_ColumnVarNameInTable="columnNEDADANIOPERSONA" msprop:Generator_ColumnPropNameInRow="NEDADANIOPERSONA" msprop:Generator_ColumnPropNameInTable="NEDADANIOPERSONAColumn" msprop:Generator_UserColumnName="NEDADANIOPERSONA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NEDADANIO" msprop:Generator_ColumnVarNameInTable="columnNEDADANIO" msprop:Generator_ColumnPropNameInRow="NEDADANIO" msprop:Generator_ColumnPropNameInTable="NEDADANIOColumn" msprop:Generator_UserColumnName="NEDADANIO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NESTSALUD" msprop:Generator_ColumnVarNameInTable="columnNESTSALUD" msprop:Generator_ColumnPropNameInRow="NESTSALUD" msprop:Generator_ColumnPropNameInTable="NESTSALUDColumn" msprop:Generator_UserColumnName="NESTSALUD" type="xs:string" minOccurs="0" />
+              <xs:element name="NTASABASE" msprop:Generator_ColumnVarNameInTable="columnNTASABASE" msprop:Generator_ColumnPropNameInRow="NTASABASE" msprop:Generator_ColumnPropNameInTable="NTASABASEColumn" msprop:Generator_UserColumnName="NTASABASE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NTASAMEJORA" msprop:Generator_ColumnVarNameInTable="columnNTASAMEJORA" msprop:Generator_ColumnPropNameInRow="NTASAMEJORA" msprop:Generator_ColumnPropNameInTable="NTASAMEJORAColumn" msprop:Generator_UserColumnName="NTASAMEJORA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NTASAMORTALIDAD" msprop:Generator_ColumnVarNameInTable="columnNTASAMORTALIDAD" msprop:Generator_ColumnPropNameInRow="NTASAMORTALIDAD" msprop:Generator_ColumnPropNameInTable="NTASAMORTALIDADColumn" msprop:Generator_UserColumnName="NTASAMORTALIDAD" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
   </xs:element>

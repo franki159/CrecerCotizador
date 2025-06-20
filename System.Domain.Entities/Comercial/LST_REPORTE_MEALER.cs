@@ -111,6 +111,20 @@ namespace System.Domain.Entities.Comercial
         public Decimal FILAPROD { get; set; }
     }
 
+    public class LST_REPORTE_VARIABLE_MOR
+    {
+        public String CORRELATIVOOPERACION { get; set; }
+        public String NROOPERACION { get; set; }
+        public String STIPOPERSONA { get; set; }
+        public String SNOMBRE { get; set; }
+        public Decimal NEDADANIOPERSONA { get; set; }
+        public Decimal NEDADANIO { get; set; }
+        public String NESTSALUD { get; set; }
+        public Decimal NTASABASE { get; set; }
+        public Decimal NTASAMEJORA { get; set; }
+        public Decimal NTASAMORTALIDAD { get; set; }
+    }
+
     public class LST_REPORTE_VARIABLE_DET_PROD
     {
         public String NROOPERACION { get; set; }

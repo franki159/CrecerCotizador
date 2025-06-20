@@ -85,8 +85,9 @@ function loadLista() {
                 Column10: 'TASAMERCSOBDA',
                 Column11: 'TASAMERCSOBSI',
                 Column12: 'ESTADO',
-                Column13: 'NESTADO',
-                Column14: 'FECHA_REGISTRO'
+                Column13: 'NVIGENCIA',
+                Column14: 'NESTADO',
+                Column15: 'FECHA_REGISTRO'
             }
 
             var propsCol = {
@@ -201,7 +202,7 @@ function loadLista() {
                                 "isState": true
                             }
                         ]
-                    },
+                    },                   
                     {
                         "col": "13",
                         "name": "Nestado",
@@ -213,6 +214,15 @@ function loadLista() {
                     },
                     {
                         "col": "14",
+                        "name": "Vigencia",
+                        "props": [
+                            {
+                                "toggle": true
+                            }
+                        ]
+                    },
+                    {
+                        "col": "15",
                         "name": "Fecha Registro",
                         "props": [
                             {
@@ -317,6 +327,59 @@ function loadLista() {
                     }
                 }).show();
 
+            });
+
+            $(".toggle-grid").on('click', function () {
+                debugger;
+                if ($(this).is(":checked")) {
+                    idTasaMercado = $(this).attr('id').replace('toggle-', '');
+                    criterio = 4;
+
+                    alertify.dialog('confirm').set({
+                        transition: 'zoom',
+                        title: 'COTIZADOR',
+                        labels: { ok: 'Ok', cancel: 'Cancelar' },
+                        message: '¿Está seguro de activar el registro seleccionado?',
+                        onok: function () {
+
+                            var model = new Object();
+
+                            model.P_CRITERIO = criterio;
+                            model.P_IDTASAMERCADO = idTasaMercado;
+
+                            $.ajax({
+                                type: 'POST',
+                                url: '../../../Mantenimiento/MantTasaMercado',
+                                contentType: 'application/json',
+                                data: JSON.stringify(model),
+                                success: function (data) {
+
+                                    //Using function of library
+                                    if (data.entityList) {
+                                        alertify.dialog('alert').set({ transition: 'zoom', message: data.entityList[0].MENSAJE, title: 'COTIZADOR' }).show();
+                                        $('.btnClosePopup').click();
+                                        idTasaMercado = 0;
+                                        loadLista();
+                                        return true;
+                                    } else {
+                                        alertify.dialog('alert').set({ transition: 'zoom', message: 'Se presentaron errores al momento de activar el registro.', title: 'COTIZADOR' }).show();
+                                        return false;
+                                    }
+                                },
+                                error: function () {
+                                    console.log('%cÉrror: Could not establish a connection with the controller.', 'color:red');
+                                    return false;
+                                }
+                            });
+
+                        },
+                        oncancel: function () {
+
+                        }
+                    }).show();
+                } else {
+                    $(this).prop('checked', true);
+                }
             });
 
             $("#overlay").fadeOut(300);

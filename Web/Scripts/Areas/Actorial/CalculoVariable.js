@@ -283,8 +283,8 @@ function loadListaVariable() {
                     var objParametros = {
                         P_IDLOTE: sname_file
                     };
-
                     window.location.href = '../../../Report/ReporteVariableDet?' + $.param(objParametros);
+                    //window.location.href = '../../../Report/ReporteVariableMor?' + $.param(objParametros);
                 }
             });
 

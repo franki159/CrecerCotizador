@@ -42,8 +42,9 @@
       <HintPath>..\packages\ExcelDataReader.DataSet.3.4.0\lib\net45\ExcelDataReader.DataSet.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="oracle.dataaccess %282%29">
-      <HintPath>C:\Users\chara\Downloads\oracle.dataaccess (2).dll</HintPath>
+    <Reference Include="oracle.dataaccess, Version=10.2.0.100, Culture=neutral, PublicKeyToken=89b483f429c47342">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SISPOC\BUENO\Sispoc.2023.DEV\SispocSystem\packages\oracle.dataaccess.dll</HintPath>
     </Reference>
     <Reference Include="Oracle.ManagedDataAccess, Version=4.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
       <HintPath>..\packages\Oracle.ManagedDataAccess.12.1.021\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>

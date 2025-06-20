@@ -71,6 +71,11 @@ namespace System.Application.Business.Comercial
             oMealerData = new MealerData();
             return oMealerData.GetReporteVariableDet(objParameters);
         }
+        public IEnumerable<LST_REPORTE_VARIABLE_MOR> GetReporteVariableMor(PARAMS_GET_MEALER objParameters)
+        {
+            oMealerData = new MealerData();
+            return oMealerData.GetReporteVariableMor(objParameters);
+        }
 
         public IEnumerable<LST_REPORTE_VARIABLE_DET_PROD> GetReporteVariableDetProd(PARAMS_GET_MEALER objParameters)
         {

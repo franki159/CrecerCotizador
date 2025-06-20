@@ -12,7 +12,7 @@ function ContentMain() {
 
             //Add main
             $('.ul-main-gnr').append(response.objMain);
-
+            debugger;
             //Main secondary
             $(".open-ul").on("click", function () {
                 //localStorage.removeItem('idClienteEdit');

@@ -30,6 +30,8 @@ namespace Web.Reports.Dataset {
         
         private dsVariableProdDataTable tabledsVariableProd;
         
+        private dsMortalidadDataTable tabledsMortalidad;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -66,6 +68,9 @@ namespace Web.Reports.Dataset {
                 }
                 if ((ds.Tables["dsVariableProd"] != null)) {
                     base.Tables.Add(new dsVariableProdDataTable(ds.Tables["dsVariableProd"]));
+                }
+                if ((ds.Tables["dsMortalidad"] != null)) {
+                    base.Tables.Add(new dsMortalidadDataTable(ds.Tables["dsMortalidad"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -112,6 +117,16 @@ namespace Web.Reports.Dataset {
         public dsVariableProdDataTable dsVariableProd {
             get {
                 return this.tabledsVariableProd;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public dsMortalidadDataTable dsMortalidad {
+            get {
+                return this.tabledsMortalidad;
             }
         }
         
@@ -191,6 +206,9 @@ namespace Web.Reports.Dataset {
                 if ((ds.Tables["dsVariableProd"] != null)) {
                     base.Tables.Add(new dsVariableProdDataTable(ds.Tables["dsVariableProd"]));
                 }
+                if ((ds.Tables["dsMortalidad"] != null)) {
+                    base.Tables.Add(new dsMortalidadDataTable(ds.Tables["dsMortalidad"]));
+                }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
                 this.Namespace = ds.Namespace;
@@ -242,6 +260,12 @@ namespace Web.Reports.Dataset {
                     this.tabledsVariableProd.InitVars();
                 }
             }
+            this.tabledsMortalidad = ((dsMortalidadDataTable)(base.Tables["dsMortalidad"]));
+            if ((initTable == true)) {
+                if ((this.tabledsMortalidad != null)) {
+                    this.tabledsMortalidad.InitVars();
+                }
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -258,6 +282,8 @@ namespace Web.Reports.Dataset {
             base.Tables.Add(this.tabledsVariable);
             this.tabledsVariableProd = new dsVariableProdDataTable();
             base.Tables.Add(this.tabledsVariableProd);
+            this.tabledsMortalidad = new dsMortalidadDataTable();
+            base.Tables.Add(this.tabledsMortalidad);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -275,6 +301,12 @@ namespace Web.Reports.Dataset {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private bool ShouldSerializedsVariableProd() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private bool ShouldSerializedsMortalidad() {
             return false;
         }
         
@@ -341,6 +373,9 @@ namespace Web.Reports.Dataset {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public delegate void dsVariableProdRowChangeEventHandler(object sender, dsVariableProdRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public delegate void dsMortalidadRowChangeEventHandler(object sender, dsMortalidadRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -2831,6 +2866,379 @@ namespace Web.Reports.Dataset {
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
                 attribute2.FixedValue = "dsVariableProdDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class dsMortalidadDataTable : global::System.Data.TypedTableBase<dsMortalidadRow> {
+            
+            private global::System.Data.DataColumn columnCORRELATIVOOPERACION;
+            
+            private global::System.Data.DataColumn columnNROOPERACION;
+            
+            private global::System.Data.DataColumn columnSTIPOPERSONA;
+            
+            private global::System.Data.DataColumn columnSNOMBRE;
+            
+            private global::System.Data.DataColumn columnNEDADANIOPERSONA;
+            
+            private global::System.Data.DataColumn columnNEDADANIO;
+            
+            private global::System.Data.DataColumn columnNESTSALUD;
+            
+            private global::System.Data.DataColumn columnNTASABASE;
+            
+            private global::System.Data.DataColumn columnNTASAMEJORA;
+            
+            private global::System.Data.DataColumn columnNTASAMORTALIDAD;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public dsMortalidadDataTable() {
+                this.TableName = "dsMortalidad";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal dsMortalidadDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected dsMortalidadDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn CORRELATIVOOPERACIONColumn {
+                get {
+                    return this.columnCORRELATIVOOPERACION;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn NROOPERACIONColumn {
+                get {
+                    return this.columnNROOPERACION;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn STIPOPERSONAColumn {
+                get {
+                    return this.columnSTIPOPERSONA;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn SNOMBREColumn {
+                get {
+                    return this.columnSNOMBRE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn NEDADANIOPERSONAColumn {
+                get {
+                    return this.columnNEDADANIOPERSONA;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn NEDADANIOColumn {
+                get {
+                    return this.columnNEDADANIO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn NESTSALUDColumn {
+                get {
+                    return this.columnNESTSALUD;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn NTASABASEColumn {
+                get {
+                    return this.columnNTASABASE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn NTASAMEJORAColumn {
+                get {
+                    return this.columnNTASAMEJORA;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn NTASAMORTALIDADColumn {
+                get {
+                    return this.columnNTASAMORTALIDAD;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public dsMortalidadRow this[int index] {
+                get {
+                    return ((dsMortalidadRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event dsMortalidadRowChangeEventHandler dsMortalidadRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event dsMortalidadRowChangeEventHandler dsMortalidadRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event dsMortalidadRowChangeEventHandler dsMortalidadRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event dsMortalidadRowChangeEventHandler dsMortalidadRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void AdddsMortalidadRow(dsMortalidadRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public dsMortalidadRow AdddsMortalidadRow(string CORRELATIVOOPERACION, string NROOPERACION, string STIPOPERSONA, string SNOMBRE, decimal NEDADANIOPERSONA, decimal NEDADANIO, string NESTSALUD, decimal NTASABASE, decimal NTASAMEJORA, decimal NTASAMORTALIDAD) {
+                dsMortalidadRow rowdsMortalidadRow = ((dsMortalidadRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        CORRELATIVOOPERACION,
+                        NROOPERACION,
+                        STIPOPERSONA,
+                        SNOMBRE,
+                        NEDADANIOPERSONA,
+                        NEDADANIO,
+                        NESTSALUD,
+                        NTASABASE,
+                        NTASAMEJORA,
+                        NTASAMORTALIDAD};
+                rowdsMortalidadRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowdsMortalidadRow);
+                return rowdsMortalidadRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                dsMortalidadDataTable cln = ((dsMortalidadDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new dsMortalidadDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal void InitVars() {
+                this.columnCORRELATIVOOPERACION = base.Columns["CORRELATIVOOPERACION"];
+                this.columnNROOPERACION = base.Columns["NROOPERACION"];
+                this.columnSTIPOPERSONA = base.Columns["STIPOPERSONA"];
+                this.columnSNOMBRE = base.Columns["SNOMBRE"];
+                this.columnNEDADANIOPERSONA = base.Columns["NEDADANIOPERSONA"];
+                this.columnNEDADANIO = base.Columns["NEDADANIO"];
+                this.columnNESTSALUD = base.Columns["NESTSALUD"];
+                this.columnNTASABASE = base.Columns["NTASABASE"];
+                this.columnNTASAMEJORA = base.Columns["NTASAMEJORA"];
+                this.columnNTASAMORTALIDAD = base.Columns["NTASAMORTALIDAD"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            private void InitClass() {
+                this.columnCORRELATIVOOPERACION = new global::System.Data.DataColumn("CORRELATIVOOPERACION", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCORRELATIVOOPERACION);
+                this.columnNROOPERACION = new global::System.Data.DataColumn("NROOPERACION", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNROOPERACION);
+                this.columnSTIPOPERSONA = new global::System.Data.DataColumn("STIPOPERSONA", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSTIPOPERSONA);
+                this.columnSNOMBRE = new global::System.Data.DataColumn("SNOMBRE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSNOMBRE);
+                this.columnNEDADANIOPERSONA = new global::System.Data.DataColumn("NEDADANIOPERSONA", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNEDADANIOPERSONA);
+                this.columnNEDADANIO = new global::System.Data.DataColumn("NEDADANIO", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNEDADANIO);
+                this.columnNESTSALUD = new global::System.Data.DataColumn("NESTSALUD", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNESTSALUD);
+                this.columnNTASABASE = new global::System.Data.DataColumn("NTASABASE", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNTASABASE);
+                this.columnNTASAMEJORA = new global::System.Data.DataColumn("NTASAMEJORA", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNTASAMEJORA);
+                this.columnNTASAMORTALIDAD = new global::System.Data.DataColumn("NTASAMORTALIDAD", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNTASAMORTALIDAD);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public dsMortalidadRow NewdsMortalidadRow() {
+                return ((dsMortalidadRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new dsMortalidadRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(dsMortalidadRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.dsMortalidadRowChanged != null)) {
+                    this.dsMortalidadRowChanged(this, new dsMortalidadRowChangeEvent(((dsMortalidadRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.dsMortalidadRowChanging != null)) {
+                    this.dsMortalidadRowChanging(this, new dsMortalidadRowChangeEvent(((dsMortalidadRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.dsMortalidadRowDeleted != null)) {
+                    this.dsMortalidadRowDeleted(this, new dsMortalidadRowChangeEvent(((dsMortalidadRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.dsMortalidadRowDeleting != null)) {
+                    this.dsMortalidadRowDeleting(this, new dsMortalidadRowChangeEvent(((dsMortalidadRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void RemovedsMortalidadRow(dsMortalidadRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                dsMealer ds = new dsMealer();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "dsMortalidadDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -6348,6 +6756,302 @@ namespace Web.Reports.Dataset {
         }
         
         /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class dsMortalidadRow : global::System.Data.DataRow {
+            
+            private dsMortalidadDataTable tabledsMortalidad;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal dsMortalidadRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tabledsMortalidad = ((dsMortalidadDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string CORRELATIVOOPERACION {
+                get {
+                    try {
+                        return ((string)(this[this.tabledsMortalidad.CORRELATIVOOPERACIONColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CORRELATIVOOPERACION\' de la tabla \'dsMortalidad\' es DBNul" +
+                                "l.", e);
+                    }
+                }
+                set {
+                    this[this.tabledsMortalidad.CORRELATIVOOPERACIONColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string NROOPERACION {
+                get {
+                    try {
+                        return ((string)(this[this.tabledsMortalidad.NROOPERACIONColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'NROOPERACION\' de la tabla \'dsMortalidad\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabledsMortalidad.NROOPERACIONColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string STIPOPERSONA {
+                get {
+                    try {
+                        return ((string)(this[this.tabledsMortalidad.STIPOPERSONAColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'STIPOPERSONA\' de la tabla \'dsMortalidad\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabledsMortalidad.STIPOPERSONAColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string SNOMBRE {
+                get {
+                    try {
+                        return ((string)(this[this.tabledsMortalidad.SNOMBREColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'SNOMBRE\' de la tabla \'dsMortalidad\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabledsMortalidad.SNOMBREColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public decimal NEDADANIOPERSONA {
+                get {
+                    try {
+                        return ((decimal)(this[this.tabledsMortalidad.NEDADANIOPERSONAColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'NEDADANIOPERSONA\' de la tabla \'dsMortalidad\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabledsMortalidad.NEDADANIOPERSONAColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public decimal NEDADANIO {
+                get {
+                    try {
+                        return ((decimal)(this[this.tabledsMortalidad.NEDADANIOColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'NEDADANIO\' de la tabla \'dsMortalidad\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabledsMortalidad.NEDADANIOColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string NESTSALUD {
+                get {
+                    try {
+                        return ((string)(this[this.tabledsMortalidad.NESTSALUDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'NESTSALUD\' de la tabla \'dsMortalidad\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabledsMortalidad.NESTSALUDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public decimal NTASABASE {
+                get {
+                    try {
+                        return ((decimal)(this[this.tabledsMortalidad.NTASABASEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'NTASABASE\' de la tabla \'dsMortalidad\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabledsMortalidad.NTASABASEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public decimal NTASAMEJORA {
+                get {
+                    try {
+                        return ((decimal)(this[this.tabledsMortalidad.NTASAMEJORAColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'NTASAMEJORA\' de la tabla \'dsMortalidad\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabledsMortalidad.NTASAMEJORAColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public decimal NTASAMORTALIDAD {
+                get {
+                    try {
+                        return ((decimal)(this[this.tabledsMortalidad.NTASAMORTALIDADColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'NTASAMORTALIDAD\' de la tabla \'dsMortalidad\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabledsMortalidad.NTASAMORTALIDADColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsCORRELATIVOOPERACIONNull() {
+                return this.IsNull(this.tabledsMortalidad.CORRELATIVOOPERACIONColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetCORRELATIVOOPERACIONNull() {
+                this[this.tabledsMortalidad.CORRELATIVOOPERACIONColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsNROOPERACIONNull() {
+                return this.IsNull(this.tabledsMortalidad.NROOPERACIONColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetNROOPERACIONNull() {
+                this[this.tabledsMortalidad.NROOPERACIONColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsSTIPOPERSONANull() {
+                return this.IsNull(this.tabledsMortalidad.STIPOPERSONAColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetSTIPOPERSONANull() {
+                this[this.tabledsMortalidad.STIPOPERSONAColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsSNOMBRENull() {
+                return this.IsNull(this.tabledsMortalidad.SNOMBREColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetSNOMBRENull() {
+                this[this.tabledsMortalidad.SNOMBREColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsNEDADANIOPERSONANull() {
+                return this.IsNull(this.tabledsMortalidad.NEDADANIOPERSONAColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetNEDADANIOPERSONANull() {
+                this[this.tabledsMortalidad.NEDADANIOPERSONAColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsNEDADANIONull() {
+                return this.IsNull(this.tabledsMortalidad.NEDADANIOColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetNEDADANIONull() {
+                this[this.tabledsMortalidad.NEDADANIOColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsNESTSALUDNull() {
+                return this.IsNull(this.tabledsMortalidad.NESTSALUDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetNESTSALUDNull() {
+                this[this.tabledsMortalidad.NESTSALUDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsNTASABASENull() {
+                return this.IsNull(this.tabledsMortalidad.NTASABASEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetNTASABASENull() {
+                this[this.tabledsMortalidad.NTASABASEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsNTASAMEJORANull() {
+                return this.IsNull(this.tabledsMortalidad.NTASAMEJORAColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetNTASAMEJORANull() {
+                this[this.tabledsMortalidad.NTASAMEJORAColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsNTASAMORTALIDADNull() {
+                return this.IsNull(this.tabledsMortalidad.NTASAMORTALIDADColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetNTASAMORTALIDADNull() {
+                this[this.tabledsMortalidad.NTASAMORTALIDADColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -6435,6 +7139,40 @@ namespace Web.Reports.Dataset {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public dsVariableProdRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public class dsMortalidadRowChangeEvent : global::System.EventArgs {
+            
+            private dsMortalidadRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public dsMortalidadRowChangeEvent(dsMortalidadRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public dsMortalidadRow Row {
                 get {
                     return this.eventRow;
                 }

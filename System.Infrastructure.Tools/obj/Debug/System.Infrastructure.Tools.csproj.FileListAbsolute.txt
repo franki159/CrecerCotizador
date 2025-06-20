@@ -171,36 +171,36 @@ D:\Apps\Mealer\System.Infrastructure.Tools\obj\Debug\System.Infrastructure.Tools
 D:\Apps\Mealer\System.Infrastructure.Tools\obj\Debug\System.Infrastructure.Tools.csproj.CopyComplete
 D:\Apps\Mealer\System.Infrastructure.Tools\obj\Debug\System.Infrastructure.Tools.dll
 D:\Apps\Mealer\System.Infrastructure.Tools\obj\Debug\System.Infrastructure.Tools.pdb
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Infrastructure.Tools\bin\Debug\System.Infrastructure.Tools.dll.config
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Infrastructure.Tools\bin\Debug\System.Infrastructure.Tools.dll
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Infrastructure.Tools\bin\Debug\System.Infrastructure.Tools.pdb
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Infrastructure.Tools\bin\Debug\ExcelDataReader.DataSet.dll
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Infrastructure.Tools\bin\Debug\ExcelDataReader.dll
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Infrastructure.Tools\bin\Debug\Newtonsoft.Json.dll
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Infrastructure.Tools\bin\Debug\Oracle.ManagedDataAccess.dll
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Infrastructure.Tools\bin\Debug\System.Domain.Entities.dll
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Infrastructure.Tools\bin\Debug\ServiceStack.dll
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Infrastructure.Tools\bin\Debug\ServiceStack.Interfaces.dll
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Infrastructure.Tools\bin\Debug\ServiceStack.Common.dll
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Infrastructure.Tools\bin\Debug\ServiceStack.Text.dll
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Infrastructure.Tools\bin\Debug\System.Memory.dll
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Infrastructure.Tools\bin\Debug\ServiceStack.Client.dll
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Infrastructure.Tools\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Infrastructure.Tools\bin\Debug\System.Domain.Entities.pdb
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Infrastructure.Tools\bin\Debug\System.Domain.Entities.dll.config
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Infrastructure.Tools\bin\Debug\ExcelDataReader.xml
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Infrastructure.Tools\bin\Debug\ExcelDataReader.DataSet.xml
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Infrastructure.Tools\bin\Debug\Newtonsoft.Json.pdb
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Infrastructure.Tools\bin\Debug\Newtonsoft.Json.xml
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Infrastructure.Tools\bin\Debug\ServiceStack.xml
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Infrastructure.Tools\bin\Debug\ServiceStack.Common.xml
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Infrastructure.Tools\bin\Debug\ServiceStack.Text.xml
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Infrastructure.Tools\bin\Debug\System.Memory.xml
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Infrastructure.Tools\bin\Debug\ServiceStack.Client.xml
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Infrastructure.Tools\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Infrastructure.Tools\obj\Debug\System.Infrastructure.Tools.csproj.AssemblyReference.cache
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Infrastructure.Tools\obj\Debug\System.Infrastructure.Tools.csproj.CoreCompileInputs.cache
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Infrastructure.Tools\obj\Debug\System.Infrastructure.Tools.csproj.CopyComplete
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Infrastructure.Tools\obj\Debug\System.Infrastructure.Tools.dll
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Infrastructure.Tools\obj\Debug\System.Infrastructure.Tools.pdb
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Infrastructure.Tools\bin\Debug\oracle.dataaccess (2).dll
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Infrastructure.Tools\bin\Debug\System.Infrastructure.Tools.dll.config
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Infrastructure.Tools\bin\Debug\System.Infrastructure.Tools.dll
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Infrastructure.Tools\bin\Debug\System.Infrastructure.Tools.pdb
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Infrastructure.Tools\bin\Debug\ExcelDataReader.DataSet.dll
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Infrastructure.Tools\bin\Debug\ExcelDataReader.dll
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Infrastructure.Tools\bin\Debug\Newtonsoft.Json.dll
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Infrastructure.Tools\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Infrastructure.Tools\bin\Debug\oraclee.dataaccess.dll
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Infrastructure.Tools\bin\Debug\System.Domain.Entities.dll
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Infrastructure.Tools\bin\Debug\ServiceStack.dll
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Infrastructure.Tools\bin\Debug\ServiceStack.Interfaces.dll
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Infrastructure.Tools\bin\Debug\ServiceStack.Common.dll
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Infrastructure.Tools\bin\Debug\ServiceStack.Text.dll
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Infrastructure.Tools\bin\Debug\System.Memory.dll
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Infrastructure.Tools\bin\Debug\ServiceStack.Client.dll
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Infrastructure.Tools\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Infrastructure.Tools\bin\Debug\System.Domain.Entities.pdb
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Infrastructure.Tools\bin\Debug\System.Domain.Entities.dll.config
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Infrastructure.Tools\bin\Debug\ExcelDataReader.xml
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Infrastructure.Tools\bin\Debug\ExcelDataReader.DataSet.xml
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Infrastructure.Tools\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Infrastructure.Tools\bin\Debug\Newtonsoft.Json.xml
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Infrastructure.Tools\bin\Debug\ServiceStack.xml
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Infrastructure.Tools\bin\Debug\ServiceStack.Common.xml
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Infrastructure.Tools\bin\Debug\ServiceStack.Text.xml
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Infrastructure.Tools\bin\Debug\System.Memory.xml
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Infrastructure.Tools\bin\Debug\ServiceStack.Client.xml
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Infrastructure.Tools\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Infrastructure.Tools\obj\Debug\System.Infrastructure.Tools.csproj.AssemblyReference.cache
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Infrastructure.Tools\obj\Debug\System.Infrastructure.Tools.csproj.CoreCompileInputs.cache
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Infrastructure.Tools\obj\Debug\System.Infrastructure.Tools.csproj.CopyComplete
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Infrastructure.Tools\obj\Debug\System.Infrastructure.Tools.dll
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Infrastructure.Tools\obj\Debug\System.Infrastructure.Tools.pdb

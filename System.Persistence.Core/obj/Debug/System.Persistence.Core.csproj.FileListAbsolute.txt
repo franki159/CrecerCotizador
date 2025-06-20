@@ -52,17 +52,17 @@ D:\Apps\Mealer\System.Persistence.Core\obj\Debug\System.Persistence.Core.csproj.
 D:\Apps\Mealer\System.Persistence.Core\obj\Debug\System.Persistence.Core.csproj.CopyComplete
 D:\Apps\Mealer\System.Persistence.Core\obj\Debug\System.Persistence.Core.dll
 D:\Apps\Mealer\System.Persistence.Core\obj\Debug\System.Persistence.Core.pdb
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Persistence.Core\bin\Debug\System.Persistence.Core.dll.config
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Persistence.Core\bin\Debug\System.Persistence.Core.dll
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Persistence.Core\bin\Debug\System.Persistence.Core.pdb
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Persistence.Core\bin\Debug\ExcelDataReader.DataSet.dll
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Persistence.Core\bin\Debug\ExcelDataReader.dll
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Persistence.Core\bin\Debug\Oracle.ManagedDataAccess.dll
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Persistence.Core\bin\Debug\ExcelDataReader.xml
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Persistence.Core\bin\Debug\ExcelDataReader.DataSet.xml
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Persistence.Core\obj\Debug\System.Persistence.Core.csproj.CoreCompileInputs.cache
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Persistence.Core\obj\Debug\System.Persistence.Core.csproj.CopyComplete
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Persistence.Core\obj\Debug\System.Persistence.Core.dll
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Persistence.Core\obj\Debug\System.Persistence.Core.pdb
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Persistence.Core\bin\Debug\oracle.dataaccess (2).dll
-E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Persistence.Core\obj\Debug\System.Persistence.Core.csproj.AssemblyReference.cache
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Persistence.Core\bin\Debug\System.Persistence.Core.dll.config
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Persistence.Core\bin\Debug\System.Persistence.Core.dll
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Persistence.Core\bin\Debug\System.Persistence.Core.pdb
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Persistence.Core\bin\Debug\ExcelDataReader.DataSet.dll
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Persistence.Core\bin\Debug\ExcelDataReader.dll
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Persistence.Core\bin\Debug\oracle.dataaccess.dll
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Persistence.Core\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Persistence.Core\bin\Debug\ExcelDataReader.xml
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Persistence.Core\bin\Debug\ExcelDataReader.DataSet.xml
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Persistence.Core\obj\Debug\System.Persistence.Core.csproj.AssemblyReference.cache
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Persistence.Core\obj\Debug\System.Persistence.Core.csproj.CoreCompileInputs.cache
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Persistence.Core\obj\Debug\System.Persistence.Core.csproj.CopyComplete
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Persistence.Core\obj\Debug\System.Persistence.Core.dll
+C:\Users\desarrollador2-ext\Desktop\Frank Chara\Actividades\Proyecto Cotizacion\Mealer\Mealer\System.Persistence.Core\obj\Debug\System.Persistence.Core.pdb

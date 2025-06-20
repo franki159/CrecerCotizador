@@ -1,0 +1,132 @@
+﻿@inherits System.Web.Mvc.WebViewPage
+@{
+    Layout = "~/Layout/MainWeb.cshtml";
+}
+
+<link href="~/Content/Areas/Modules/modules.css" media="all" rel="stylesheet" />
+<link href="~/Content/Areas/Modules/popup.css" media="all" rel="stylesheet" />
+<link href="~/Content/Areas/Modules/responsive.css" rel="stylesheet" />
+<link href="~/Content/fontawesome/css/all.css" rel="stylesheet" />
+<link href="~/Content/System/grid2.css" media="all" rel="stylesheet" />
+
+<style>
+    .ui-datepicker-calendar {
+        display: none;
+    }
+</style>
+
+<div class="module-content">
+    <div class="module-content-title">
+        <div>
+            <span class="title">Mantenimiento &nbsp;/&nbsp; Sepelio</span>
+        </div>
+    </div>
+    <div class="module-content-data">
+        <div class="data-contains">
+            <div class="contains-description">
+                <div class="contains-search">
+                    <div class="search-filter">
+                        <div class="filter-input filter-display">
+                            <div class="search-option">
+                                <div class="box-display" style="width: 100px">
+                                    <span style="position: relative; top: 6px">Fecha Cierre</span>
+                                </div>
+                                <div class="box-display" style="width: 170px">
+                                    <input type="text" class="daterangeRegistro" style="width: 93%" />
+                                </div>
+                            </div>
+                            <div class="search-option">
+                                <button id="btnSearch">
+                                    <img src="~/Images/Areas/Modules/search_data_16.png" />
+                                    <span>Buscar</span>
+                                </button>
+                            </div>
+                            <div class="search-option">
+                                <button id="btnNuevo">
+                                    <img src="~/Images/Areas/Modules/document_new_16.png" />
+                                    <span>Nuevo</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="data-Sepelio">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--Popup Register && Modify-->
+<div class="popup">
+    <div class="popup-content">
+        <div class="popup-header">
+            <div class="popup-header-title">
+                <span class="title-span">Nuevo Sepelio</span>
+            </div>
+            <div class="popup-header-close">
+                <button class="btnClosePopup">
+                    <img src="~/Images/Areas/Modules/close_16.png" />
+                </button>
+            </div>
+        </div>
+        <div class="popup-body">
+            <div class="popup-body-block">
+                <div class="body-span">
+                    <span class="label">Fecha Cierre:</span>
+                </div>
+                <div class="body-input">
+                    <input type="text" id="txtFecCierre" class="textcontrol txtClean" autocomplete="off" autofocus />
+                </div>
+            </div>
+            <div class="popup-body-block">
+                <div class="body-span">
+                    <span class="label">Monto Sepelio:</span>
+                </div>
+                <div class="body-input">
+                    <input type="text" id="txtMonto" class="textcontrol txtClean monto" autocomplete="off" />
+                </div>
+            </div>
+            <div id="div_tipo" class="popup-body-block">
+                <div class="body-span">
+                    <span class="label">Tipo:</span>
+                </div>
+                <div class="body-input">
+                    <select id="cboTipo" style="width: 97%" class="textcontrol txtClean">
+                        <option value="1">Mensual</option>
+                        <option value="2">Trimestral</option>
+                    </select>
+                </div>
+            </div>
+            <div id="div_meses" class="popup-body-block">
+                <div class="body-span">
+                    <table class="textcontrol txtClean lista-det-mes" style="text-align: center; width: 97%">
+                        <thead>
+                            <tr>
+                                <th>MESES GENERADOS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="popup-footer">
+            <div class="popup-footer-block">
+                <button id="btnCancel" class="btnCancel">
+                    <img src="~/Images/Areas/Modules/cancel_16.png" />
+                    <span>Cancelar</span>
+                </button>
+                <button id="btnAccept" class="btnAccept">
+                    <img src="~/Images/Areas/Modules/save-file-option.png" />
+                    <span>Guardar</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/Areas/Configuration/sepelio.js"></script>

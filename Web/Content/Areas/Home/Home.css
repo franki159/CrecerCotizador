@@ -1,0 +1,231 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    user-select: none;
+    overflow: hidden;
+}
+
+body{
+    background-image: url(../../../Images/Areas/Home/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.body-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.body-content .body-content-layout{
+    width: 100%;
+    height: 100%;
+}
+
+.body-content .body-content-layout .layout-header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.body-content .body-content-layout .layout-header .header-box{
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 8px;
+}
+
+.body-content .body-content-layout .layout-header .header-box span{
+    display: block;
+    font-size: 10px;
+    color: #fff;
+    font-weight: 600;
+    padding: 2px 15px;
+    margin-right: 8px;
+}
+
+.body-content .body-content-layout .layout-header .header-box img{
+    width: 60%;
+    height: 60%;
+    display: block;
+    padding-top: 4px;
+}
+
+.body-content .body-content-layout .layout-header .img-normal img{
+    width: 80%;
+    height: 70%;
+    margin-left: 16px;
+    display: block;
+    padding-top: 2px;
+}
+
+.body-content .body-content-layout .layout-body{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.body-content .body-content-layout .layout-body .body-login{
+    padding: 20px;
+    width: 50%;
+}
+
+.body-content .body-content-layout .layout-body .body-login .login-content{
+    width: 300px;
+    margin: 80px auto;
+    padding: 15px;
+}
+
+.body-content .body-content-layout .layout-body .body-login .login-content .login-row{
+    padding:5px;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.body-content .body-content-layout .layout-body .body-login .login-content .row-border{
+    margin-bottom: 10px;
+    border-bottom: 1px solid #fff;
+    padding: 10px 3px;
+}
+
+.body-content .body-content-layout .layout-body .body-login .login-content .login-row h2{
+    font-size: 35px;
+    font-weight: bold;
+    color:#fff;
+}
+
+.body-content .body-content-layout .layout-body .body-login .login-content .login-row h3{
+    font-size: 12px;
+    color: #fff;
+}
+
+.body-content .body-content-layout .layout-body .body-login .login-content .login-row input[type="text"],
+.body-content .body-content-layout .layout-body .body-login .login-content .login-row input[type="password"]{
+    width: 250px;
+    padding: 11px 4px;
+    text-transform: uppercase;
+    font-size: 12px;
+    outline: none;
+    border:none;
+    background: none;
+    font-weight: 600;
+    color:#fff;
+}
+
+.body-content .body-content-layout .layout-body .body-login .login-content .login-row img{
+    display: block;
+    padding-top: 6px;
+    margin-right: 10px;
+}
+
+.body-content .body-content-layout .layout-body .body-login .login-content .login-row .remember-box{
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    border: 3px solid #fff;
+    cursor: pointer;
+}
+
+.body-content .body-content-layout .layout-body .body-login .login-content .login-row .remember-box .box-checked{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    cursor: pointer;
+}
+
+.body-content .body-content-layout .layout-body .body-login .login-content .login-row .remember-label{
+    font-size: 11px;
+    margin-left: 9px;
+    display: block;
+    padding-top: 3px;
+    color:#333;
+}
+
+.body-content .body-content-layout .layout-body .body-login .login-content .login-row button{
+    width: 100%;
+    padding: 10px 0;
+    outline: none;
+    border-radius: 4px;
+    color:#fff;
+    background: rgb(0, 176, 223);
+    border: 1px solid rgb(0, 176, 224);
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.body-content .body-content-layout .layout-body .body-login .login-content .login-row a{
+    margin-top: 8px;
+    display: block;
+    padding: 2px 8px;
+    font-size: 11px;
+    text-decoration: none;
+    margin-right: 15px;
+    color:#fff;
+    font-weight: 500;
+    outline: none;
+    border-left: 2px solid #fff;
+    transition: color .5s;
+}
+
+.body-content .body-content-layout .layout-body .body-login .login-content .login-row a:hover{
+    color:rgb(0, 176, 224);
+}
+
+
+@media only screen and (max-width: 950px){
+    
+    .body-content .body-content-layout .layout-header .box-information{
+        display: none;
+    }
+    
+    .body-content .body-content-layout .layout-body{
+        justify-content: center;
+    }
+    
+    .body-content .body-content-layout .layout-body .float-div{
+        display: none;
+    }
+    
+    .body-content .body-content-layout .layout-body .body-login{
+        padding: 0px;
+        width: 100%;
+    }
+    
+    .body-content .body-content-layout .layout-body .body-login .login-content{
+        width: 300px;
+        margin: 100px auto;
+    }
+    
+    .body-content .body-content-layout .layout-body .body-login .login-content .login-row input[type="text"],
+    .body-content .body-content-layout .layout-body .body-login .login-content .login-row input[type="password"]{
+        width: 100%;
+        padding: 11px 4px;
+        font-size: 12px;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

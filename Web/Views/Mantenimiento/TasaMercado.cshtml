@@ -1,0 +1,164 @@
+﻿@inherits System.Web.Mvc.WebViewPage
+@{
+    Layout = "~/Layout/MainWeb.cshtml";
+}
+
+<link href="~/Content/Areas/Modules/modules.css" media="all" rel="stylesheet" />
+<link href="~/Content/Areas/Modules/popup.css" media="all" rel="stylesheet" />
+<link href="~/Content/Areas/Modules/responsive.css" rel="stylesheet" />
+<link href="~/Content/fontawesome/css/all.css" rel="stylesheet" />
+<link href="~/Content/System/grid2.css" media="all" rel="stylesheet" />
+
+<style>
+    .ui-datepicker-calendar {
+        display: none;
+    }
+</style>
+
+<div class="module-content">
+    <div class="module-content-title">
+        <div>
+            <span class="title">Mantenimiento &nbsp;/&nbsp; Tasa Mercado</span>
+        </div>
+    </div>
+    <div class="module-content-data">
+        <div class="data-contains">
+            <div class="contains-description">
+                <div class="contains-search">
+                    <div class="search-filter">
+                        <div class="filter-input filter-display">
+                            <div class="search-option">
+                                <div class="box-display" style="width: 100px">
+                                    <span style="position: relative; top: 6px">Fecha Registro</span>
+                                </div>
+                                <div class="box-display" style="width: 170px">
+                                    <input type="text" class="daterangeRegistro" style="width: 93%" />
+                                </div>
+                            </div>
+                            <div class="search-option">
+                                <button id="btnSearch">
+                                    <img src="~/Images/Areas/Modules/search_data_16.png" />
+                                    <span>Buscar</span>
+                                </button>
+                            </div>
+                            <div class="search-option">
+                                <button id="btnNuevo">
+                                    <img src="~/Images/Areas/Modules/document_new_16.png" />
+                                    <span>Nuevo</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="data-Tasa-Mercado">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--Popup Register && Modify-->
+<div class="popup">
+    <div class="popup-content">
+        <div class="popup-header">
+            <div class="popup-header-title">
+                <span class="title-span">Nueva Tasa Mercado</span>
+            </div>
+            <div class="popup-header-close">
+                <button class="btnClosePopup">
+                    <img src="~/Images/Areas/Modules/close_16.png" />
+                </button>
+            </div>
+        </div>
+        <div class="popup-body">
+            <div class="popup-body-block">
+                <div class="body-span">
+                    <span class="label">Jubilación Soles Ajustados:</span>
+                </div>
+                <div class="body-input">
+                    <input type="text" id="txtJubSA" class="textcontrol txtClean monto_5" autocomplete="off" autofocus />
+                </div>
+            </div>
+            <div class="popup-body-block">
+                <div class="body-span">
+                    <span class="label">Jubilación Dólares Ajustados:</span>
+                </div>
+                <div class="body-input">
+                    <input type="text" id="txtJubDA" class="textcontrol txtClean monto_5" autocomplete="off" />
+                </div>
+            </div>
+            <div class="popup-body-block">
+                <div class="body-span">
+                    <span class="label">Jubilación Soles Indexados:</span>
+                </div>
+                <div class="body-input">
+                    <input type="text" id="txtJubSI" class="textcontrol txtClean monto_5" autocomplete="off" />
+                </div>
+            </div>
+            <div class="popup-body-block">
+                <div class="body-span">
+                    <span class="label">Invalidez Soles Ajustados:</span>
+                </div>
+                <div class="body-input">
+                    <input type="text" id="txtInvSA" class="textcontrol txtClean monto_5" autocomplete="off" />
+                </div>
+            </div>
+            <div class="popup-body-block">
+                <div class="body-span">
+                    <span class="label">Invalidez Dólares Ajustados:</span>
+                </div>
+                <div class="body-input">
+                    <input type="text" id="txtInvDA" class="textcontrol txtClean monto_5" autocomplete="off" />
+                </div>
+            </div>
+            <div class="popup-body-block">
+                <div class="body-span">
+                    <span class="label">Invalidez Soles Indexados:</span>
+                </div>
+                <div class="body-input">
+                    <input type="text" id="txtInvSI" class="textcontrol txtClean monto_5" autocomplete="off" />
+                </div>
+            </div>
+            <div class="popup-body-block">
+                <div class="body-span">
+                    <span class="label">Sobrevivencia Soles Ajustados:</span>
+                </div>
+                <div class="body-input">
+                    <input type="text" id="txtSobSA" class="textcontrol txtClean monto_5" autocomplete="off" />
+                </div>
+            </div>
+            <div class="popup-body-block">
+                <div class="body-span">
+                    <span class="label">Sobrevivencia Dólares Ajustados:</span>
+                </div>
+                <div class="body-input">
+                    <input type="text" id="txtSobDA" class="textcontrol txtClean monto_5" autocomplete="off" />
+                </div>
+            </div>
+            <div class="popup-body-block">
+                <div class="body-span">
+                    <span class="label">Sobrevivencia Soles Indexados:</span>
+                </div>
+                <div class="body-input">
+                    <input type="text" id="txtSobSI" class="textcontrol txtClean monto_5" autocomplete="off" />
+                </div>
+            </div>
+        </div>
+        <div class="popup-footer">
+            <div class="popup-footer-block">
+                <button id="btnCancel" class="btnCancel">
+                    <img src="~/Images/Areas/Modules/cancel_16.png" />
+                    <span>Cancelar</span>
+                </button>
+                <button id="btnAccept" class="btnAccept">
+                    <img src="~/Images/Areas/Modules/save-file-option.png" />
+                    <span>Guardar</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/Areas/Configuration/TasaMercado.js"></script>

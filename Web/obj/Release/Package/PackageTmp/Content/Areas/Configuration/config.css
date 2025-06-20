@@ -1,0 +1,154 @@
+﻿
+
+.block-item .block-radio {
+            display: flex;
+            justify-content: flex-start;
+            height: 27px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+ .block-item .block-radio .body-input-radio {
+                display: flex;
+                justify-content: flex-start;
+                width: 80px;
+            }
+
+ .block-item .block-radio .body-input-radio input[type="radio"] {
+                    position: relative;
+                    width: 80px;
+                    height: 27px;
+                    -webkit-appearance: none;
+                    background: red;
+                    z-index: 20;
+                    padding: 6px 6px;/*8-6*/
+                    background: #fff;
+                    outline: none;
+                    cursor: pointer;
+                    transition: all .3s ease;
+                    text-align: center;
+                    font-size: 12px;
+                    color: rgb(103, 106, 108);
+                }
+
+  .block-data-row .block-item .block-radio .body-input-radio .left-radio {
+                    border-right: 1px solid #ccc;
+                    border-radius: 4px 0 0 4px;
+                }
+
+   .block-data-row .block-item .block-radio .body-input-radio .left-radio:before {
+                        content: 'PEN';
+                    }
+
+  .block-data-row .block-item .block-radio .body-input-radio .rigth-radio {
+                    border-radius: 0 4px 4px 0;
+                }
+
+                     .block-data-row .block-item .block-radio .body-input-radio .rigth-radio:before {
+                        content: 'USD';
+                    }
+
+                .block-data-row .block-item .block-radio .body-input-radio input[type="radio"]:checked {
+                    background: rgb(28, 132, 198);
+                    color: #fff;
+                }
+
+ .block-data-row .block-item .block-radio .body-input-radio input[type="radio"]:checked  {
+                        color: #fff;
+                    }
+
+    .block-data-row .block-item .block-radio .body-input-radio input[type="radio"]:checked:disabled {
+        background:  rgb(127, 129, 130);
+    }
+.block-item .block-radio .body-input-radio input[type="radio"]:disabled {
+    background:  #eee;
+}
+
+.short-radio {
+     width: 40px !important;
+}
+
+  .popup .popup-content .popup-body .data-show-Amount {
+                /*height: 0px; /*215px*/
+   overflow:hidden;
+   transition: height .6s ease;
+   }
+
+.popup-editar {  
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.4);
+    display: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    z-index:100;
+}
+
+.popup-asiento {
+   position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.4);
+    display: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    z-index:100;
+}
+
+
+.select-single {
+/*width: 200px !important;*/
+}
+
+
+.block-resize-data .dTable .l_module {
+    /*border-radius: 3px !important;
+    color: #fff !important;
+    padding: 0px 4px !important;
+    margin-right: 4px !important;*/  
+    display: inline !important; 
+}
+
+
+.config {
+    margin-left:0 !important;
+}
+
+.txtCuenta-short{
+    width: 16px !important;
+    /*font-size:14px !important;    */
+    border: 1px solid rgba(228, 228, 228, 1) !important;
+    border-radius: 4px !important;
+    padding: 7px 8px !important;
+    }    
+
+.txtCuentasingleLeft-short{    
+    /*
+         margin-left:-2px;
+        */
+   
+    width: 8px !important;
+    /*font-size:14px !important;    */
+    border-radius: 4px 0 0 4px !important;
+    padding: 7px 7px !important;
+    }    
+
+   .txtCuentasingleRight-short{
+    /*font-size:14px !important;    */
+    margin-left: -4px;
+    border-radius: 0 4px 4px 0 !important;
+    width: 8px !important;
+    /*font-size:14px !important;    */
+    padding: 7px 7px !important;
+    }
+
+.ramo-cbo {
+    max-width:271px !important;
+}

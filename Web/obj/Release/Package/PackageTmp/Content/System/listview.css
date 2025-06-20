@@ -1,0 +1,88 @@
+﻿.title-large{
+    position: relative;
+    padding: 5px 0px 5px 3px;
+    border-bottom: 2px solid #ccc;
+    margin-right: 5px;
+    margin-top:10px;
+    margin-bottom:5px;
+}
+
+.container-listview{
+	display: flex;
+	justify-content: flex-start;
+}
+
+.container-listview .tbl{
+	display: block;
+	width: 230px;
+	height: 150px;
+	max-height: 250px;
+	border:1px solid rgba(228, 228, 228, 1);
+	position: relative;
+	margin: 1px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding: 10px 0;
+	border-radius: 3px;
+    background:#fff;
+}
+
+.container-listview .tbl table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.container-listview .tbl table tr td{
+	padding: 8px 10px;
+	background: #fff;
+	transition: background .3s ease;
+}
+
+.container-listview .tbl table tr td.selected{
+    background:rgb(187, 211, 227);
+}
+
+.container-listview .tbl table tr td.delete{
+    background:rgb(187, 211, 227);
+}
+
+.container-listview .tbl table tr td.delete:hover{
+    cursor: pointer;
+	background: rgb(187, 211, 227) !important;
+}
+
+.container-listview .tbl table tr td.selected:hover{
+    cursor: pointer;
+	background: rgb(187, 211, 227) !important;
+}
+
+.container-listview .tbl table tr td:hover{
+	cursor: pointer;
+	background: rgb(228, 228, 228);
+}
+
+.container-listview .icon-option{
+    display: block;
+    position: relative;
+    margin-top: 80px;
+    padding: 0 3px;
+}
+
+.container-listview .icon-option button{
+    padding: 3px 8px;
+    border: 1px solid rgb(215, 215, 215);
+    text-align: center;
+    background: #fff;
+    border-radius: 3px;
+    margin-top:3px;
+}
+
+.container-listview .icon-option button:hover{
+    cursor:pointer;
+}
+
+.container-listview  span{
+    display:block;
+    padding:5px 3px;
+    margin-top:8px;
+}

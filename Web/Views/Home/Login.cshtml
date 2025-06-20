@@ -1,0 +1,95 @@
+﻿@inherits System.Web.Mvc.WebViewPage
+
+<title>SIGMA</title>
+<link href="~/Images/Layout/title.ico" rel="shortcut icon" />
+<link href="~/Content/Areas/Home/Home.css" rel="stylesheet" media="all" />
+<link href="~/Content/System/errorsession.css" rel="stylesheet" media="all" />
+<script src="~/Scripts/Frameworks/JQuery/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script src="~/Scripts/Areas/Home/Login.js" type="text/javascript"></script>
+
+<div class="body-content">
+    <div class="body-content-layout">
+        <div class="layout-header">
+            <div class="header-box img-normal">
+                <img src="../../../Images/Areas/Home/logo-crecer-azul.png" /> 
+            </div>
+            <div class="header-box box-information">
+                <div>
+                    <span>01-554-2324</span>
+                    <span>www.crecerseguros.com</span>
+                    <span>Av. Jorge Basadre 310 - Piso 2 - San Isidro</span>
+                </div>
+                <div>
+                    <img src="../../../Images/Areas/Home/earth-globe-64.png" />
+                </div>
+            </div>
+        </div>
+        <div class="layout-body">
+            <div class="body-login">
+                <div class="login-content">
+                    <div class="login-row">
+                        <h2>SIGMA</h2>
+                    </div>
+                    <div class="login-row">
+                        <h3>Sistema Integrado de Gestión Mejorada Acsel-e</h3>
+                    </div>
+                    <div class="login-row row-border">
+                        <div>
+                            <img src="../../../Images/Areas/Home/user-black-close-up-shape.png" />
+                        </div>
+                        <div>
+                            <input class="txtUser input-text" type="text" maxlength="30" />
+                        </div>
+                    </div>
+                    <div class="login-row row-border">
+                        <div>
+                            <img src="../../../Images/Areas/Home/icon.png" />
+                        </div>
+                        <div>
+                            <input class="txtPass" type="password" maxlength="18" />
+                        </div>
+                    </div>
+                    <div class="login-row row-remember">
+                        <div class="remember-box">
+                            <div class="box-checked" onclick="rememberUser()"></div>
+                        </div>
+                        <div class="remember-label">
+                            <span>Recordarme</span>
+                        </div>
+                    </div>
+                    <div class="login-row">
+                        <button class="btnIngresar">Ingresar</button>
+                    </div>
+                    <div class="login-row">
+                        <div>
+                            <a href="#">Olvidé mi contraseña</a>
+                        </div>
+                        <div>
+                            <a href="#">Cambiar mi contraseña</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Solo sirve de columna flotante-->
+            <div class="float-div"></div>
+        </div>
+    </div>
+</div>
+
+<!--Modal de Error-->
+<div class="content-error">
+    <div class="error-message block">
+        <div class="top">
+            <img src="~/Images/Layout/ErrorSession/padlock.png" />
+        </div>
+        <div class="bold">
+            <span>Acceso no autorizado</span>
+        </div>
+        <div class="blockquote">
+            <span>Ud. no tiene permiso para ingresar a esta página.</span>
+        </div>
+        <div class="blockquote top alert">
+            <span>Comuníquese con el administrador.</span>
+        </div>
+    </div>
+</div>

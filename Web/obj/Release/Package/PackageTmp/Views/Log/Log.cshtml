@@ -1,0 +1,129 @@
+﻿
+@inherits System.Web.Mvc.WebViewPage
+@{
+    Layout = "~/Layout/MainWeb.cshtml";
+}
+
+<link href="~/Content/Areas/Modules/modules.css" media="all" rel="stylesheet" />
+<link href="~/Content/Areas/Modules/popup.css" media="all" rel="stylesheet" />
+
+
+<link href="~/Content/Areas/Configuration/config.css" rel="stylesheet" />
+<style>
+
+    .toggle-grid {
+        position: relative;
+        width: 40px;
+        height: 20px;
+        -webkit-appearance: none;
+        background: #c6c6c6;
+        outline: none;
+        border-radius: 20px;
+        box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+        margin-top: 4px;
+        transition: .5s;
+    }
+
+    input:checked[type="checkbox"]  {
+        background: rgb(28, 132, 198);
+    }
+
+    .toggle-grid:before {
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 20px;
+        top: 0;
+        left: 0;
+        background: #fff;
+        transform: scale(1.1);
+        box-shadow: 0 2px 5px rgba(0,0,0,.2);
+        transition: .5s;
+        margin: 2px 2px;
+    }
+
+    input:checked[type="checkbox"]:before {
+        left: 20px;
+    }
+
+    .btnSaveLog {
+        display: inline-flex;
+        float: left;
+        
+
+    }
+
+    .Ruta {
+        display: inline-flex !important;        
+    }
+
+    .fileLog {
+        margin-right: 10px;
+    }
+
+</style>
+
+<div class="module-content">
+    <div class="module-content-title">
+        <div>
+            <span class="title">Log de Auditoría</span>
+            <span class="description">Inicio&nbsp;/&nbsp;Configuración</span>
+        </div>
+    </div>
+    <div class="module-content-data">
+        <div class="data-contains">
+            <div class="contains-description">
+                <span>Configurar generación de logs</span>
+            </div>
+            <div class="contains-search">
+                <div class="search-filter">
+                    <div class="filter-input" >
+                        <div class="">
+                            <span class="label" style="display: inline-flex;">Generar log a nivel de aplicación:</span>
+                            <input type="checkbox" id="chk_app" class="toggle-grid" style="display: inline-flex; padding: 5px;" checked="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-filter" style="display:inline-flex;">
+                    <div class="filter-input" style="">
+                        <div class="">
+                            <span class="label fileLog">Generar log en archivos físicos:</span>
+                            <input type="checkbox" id="chk_file" class="toggle-grid" style="display: inline-flex; padding: 5px;" checked="">
+                        </div>
+                    </div>
+                    @*<div class="filter-input" style="width: 80%; padding: 8px; ">
+                <span class="label">Ruta:</span>
+                <div class="input-search Ruta">
+                    <input type="text" maxlength="30" class="txtDescription txtRuta" id="txtRuta" />
+                </div>
+            </div>*@
+                </div>
+                <div class="search-filter" style="display:inline-flex;">                  
+                    <div class="filter-input" style="padding: 8px; ">
+                        <span class="label">Ruta:</span>
+                        <div class="input-search Ruta">
+                            <input type="text" maxlength="200" class="txtDescription txtRuta" id="txtRuta" style="width:400px" />
+                        </div>
+                    </div>
+                </div>
+                <br />
+                
+                <div class="search-filter btnSaveLog">
+                    <div class="search-option" style="padding: 15px 18px;">
+                        <button class="btnSendInfo btnSave" style="padding: 7px 12px; min-width:88px">
+                            <img src="~/Images/Areas/Modules/save-file-option.png" />
+                            <span style=" padding-top: 2px;">Guardar</span>
+                        </button>
+
+                    </div>
+                </div>              
+
+                </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="~/Scripts/Areas/Configuration/Log/log.js"></script>

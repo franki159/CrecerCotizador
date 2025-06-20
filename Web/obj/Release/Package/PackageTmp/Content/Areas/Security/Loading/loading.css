@@ -1,0 +1,43 @@
+﻿*{
+    padding: 0;
+    margin: 0;
+    font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.loading-ready{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin: auto;
+    border:5px solid #ccc;
+    border-top: 5px solid rgb(0, 176, 224);;
+    animation: round 2s linear infinite;
+}
+
+.loading-porcent{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 50px;
+    height: 20px;
+    text-align: center;
+}
+
+.loading-porcent span{
+    display: block;
+    font-size: 18px;
+    color:rgb(0, 176, 224);;
+}
+
+@keyframes round{
+    from{transform: rotate(0deg)}
+    to{transform: rotate(360deg)}
+}

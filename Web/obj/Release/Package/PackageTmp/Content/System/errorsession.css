@@ -1,0 +1,76 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(109, 109, 108);
+}
+
+.content-error {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transition: all .8s ease;
+    background-clip: padding-box;
+    background-color: rgba(0,0,0,.5);
+}
+
+    .content-error .block {
+        width: 270px;
+        height: 300px;
+        display: block;
+        border: 1px solid rgba(51, 51, 51, 0.61);
+        margin: 250px auto;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        margin-bottom: 5px;
+        background: #fff;
+    }
+
+    .content-error .error-footer {
+        height: 15%;
+        background: rgb(26, 61, 92);
+        border-radius: 3px;
+        color: #fff;
+        border-radius: 3px;
+    }
+
+    .content-error .error-message div {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .content-error .error-message .top {
+        margin-top: 30px;
+        font-weight: bold;
+    }
+
+    .content-error .error-message .bold {
+        font-weight: bold;
+    }
+
+    .content-error .error-message .blockquote {
+        padding: 8px 0;
+    }
+
+        .content-error .error-message .blockquote span {
+            display: block;
+            padding: 5px 10px;
+            font-size: 13px;
+        }
+
+    .content-error .error-message .alert {
+        background: rgba(204, 204, 204, 0.51); /*#f8fafb;*/
+        margin-top: 27px;
+        border-radius: 0 0 3px 3px;
+    }
+
+        .content-error .error-message .alert span {
+            padding: 12px 10px;
+            font-weight: 500;
+        }

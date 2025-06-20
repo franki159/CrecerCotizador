@@ -1,0 +1,310 @@
+﻿@inherits System.Web.Mvc.WebViewPage
+@{
+    Layout = "~/Layout/MainWeb.cshtml";
+}
+
+<link href="~/Content/Areas/Modules/modules.css" media="all" rel="stylesheet" />
+<link href="~/Content/Areas/Modules/popup.css" media="all" rel="stylesheet" />
+<link href="~/Content/Areas/Modules/responsive.css" rel="stylesheet" />
+<link href="~/Content/fontawesome/css/all.css" rel="stylesheet" />
+<link href="~/Content/System/grid2.css" media="all" rel="stylesheet" />
+
+<style>
+    .texto-central {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search-option button:disabled,
+    .search-option button[disabled] {
+        background-color: #cccccc !important;
+        border-color: #cccccc !important;
+        color: #666666 !important;
+        cursor: default !important;
+    }
+
+    .module-content .module-content-data .data-contains .contains-search .search-filter .filter-input {
+        padding: 10px 0;
+    }
+
+    .nav-pill-item {
+        width: 31.33%;
+        margin: 10px, 15px;
+        color: #424242;
+        float: left;
+        margin-right: 3%;
+        text-align: center;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-weight: bold;
+        cursor: pointer;
+        box-sizing: border-box;
+    }
+
+        .nav-pill-item:hover {
+            border-radius: 5px;
+            background: #eee;
+        }
+
+    #nav-tomorrow {
+        float: right;
+        margin-right: 0;
+    }
+
+    #nav-today {
+        margin-right: 0;
+    }
+
+    .calender .c-active {
+        border-radius: 5px;
+        color: white;
+        background: rgb(28, 132, 198);
+        padding-top: 5px;
+        padding-bottom: 8px;
+    }
+
+    .calender {
+        margin-bottom: 25px !important;
+        height: 5px;
+    }
+
+    /* Mobile friendly table start */
+
+    .contentTable {
+        background-color: #ffffff;
+        border-color: #ffffff;
+        font-size: 13px;
+        width: 100%;
+        color: #323232;
+    }
+
+        .contentTable > thead {
+            text-align: center !important;
+            color: whitesmoke;
+            background-color: #E2231A;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+
+    .table-hover tbody tr:hover td,
+    .table-hover tbody tr:hover th {
+        background-color: #feffbf;
+    }
+
+    #content-yesterday,
+    #content-tomorrow {
+        display: none;
+    }
+
+    .colorAzul {
+        background: rgb(28, 132, 198) !important;
+        border: rgb(28, 132, 198) !important;
+    }
+
+    .colorMostaza {
+        background: rgb(177, 184, 183) !important;
+        border: rgb(177, 184, 183) !important;
+    }
+
+    .colorRojo {
+        background: rgb(237, 85, 101) !important;
+        border: rgb(237, 85, 101) !important;
+    }
+
+    .select-number-pagination {
+        width: max-content !important;
+    }
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: transparent;
+        border-spacing: 0;
+        border: 1px solid #ddd;
+        margin-bottom: 10px;
+    }
+
+    .tableEncabezado {
+        vertical-align: bottom;
+        border-bottom: 2px solid #ddd;
+        padding: 10px;
+        line-height: 1.428571429;
+        text-align: center;
+        box-sizing: border-box;
+        border-bottom-width: 2px;
+        border-right: 1px solid #ddd;
+    }
+
+        .tableEncabezado > thead > tr > th {
+            border-bottom-width: 2px;
+            border: 1px solid #ddd;
+            vertical-align: bottom;
+            line-height: 1.428571429;
+        }
+
+    .filaPrincipal {
+        background-color: #f1f2f7;
+        padding: 10px;
+        border-top: 1px solid #f1f2f7;
+        text-transform: none;
+        border-right: 1px solid #ddd;
+    }
+
+    .filaSecundario {
+        padding: 10px;
+        border-top: 1px solid #ddd;
+        text-transform: none;
+        border-right: 1px solid #ddd;
+    }
+</style>
+
+<div class="module-content">
+    <div class="module-content-title">
+        <div>
+            <span class="title">Cotizador &nbsp;/&nbsp; Calculo</span>
+        </div>
+    </div>
+    <div class="module-content-data">
+        <div class="data-contains">
+
+            <div class="row">
+                <div class="col-md-12 calender" id="content_tab_one">
+                    <div id="nav-icb" class="nav-pill-item c-active" data-target="#content-today">Consulta</div>
+                    <div id="nav-icg" class="nav-pill-item" data-target="#content-yesterday">Registro</div>
+                </div>
+
+            </div>
+
+            <div class="contains-search">
+
+                <section id="content-today" class="content-pill">
+                    <div class="contains-search">
+                        <div class="search-filter">
+                            <div class="filter-input filter-display">
+                                <div class="search-option">
+                                    <div class="box-display" style="width: 100px">
+                                        <span style="position: relative; top: 6px">Fecha Registro</span>
+                                    </div>
+                                    <div class="box-display" style="width: 170px">
+                                        <input type="text" class="daterangeRegistro" style="width: 93%" />
+                                    </div>
+                                    @*<div class="box-display" style="width: 100px; text-align: right">
+                                            <span style="position: relative; top: 6px">Fecha Cierre&nbsp;</span>
+                                        </div>
+                                        <div class="box-display" style="width: 170px">
+                                            <input type="text" class="daterangeCierre" style="width: 93%" />
+                                        </div>*@
+                                </div>
+                                <div class="search-option">
+                                    <button id="btnSearch">
+                                        <img src="~/Images/Areas/Modules/search_data_16.png" />
+                                        <span>Buscar</span>
+                                    </button>
+                                </div>
+                                <div class="search-option">
+                                    <button id="btnNuevo">
+                                        <img src="~/Images/Areas/Modules/document_new_16.png" />
+                                        <span>Nuevo</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="data-archivosunat">
+
+                        </div>
+                    </div>
+                </section>
+
+                <section id="content-yesterday" class="content-pill">
+                    <div class="contains-search">
+                        <div class="search-filter">
+                            <div class="filter-input filter-display">
+                                <div class="search-option">
+                                    <div class="box-display" style="width: 100px">
+                                        <span style="position: relative; top: 6px">Fecha Registro</span>
+                                    </div>
+                                    <div class="box-display" style="width: 170px">
+                                        <input type="text" class="daterangeRegistro" style="width: 93%" />
+                                    </div>
+                                    <div class="box-display" style="width: 100px; text-align: right">
+                                        <span style="position: relative; top: 6px">Fecha Cierre&nbsp;</span>
+                                    </div>
+                                    <div class="box-display" style="width: 170px">
+                                        <input type="text" class="daterangeCierre" style="width: 93%" />
+                                    </div>
+                                </div>
+                                <div class="search-option">
+                                    <button id="btnBuscarInput">
+                                        <img src="~/Images/Areas/Modules/search_data_16.png" />
+                                        <span>Buscar</span>
+                                    </button>
+                                </div>
+                                @*<div class="search-option">
+                                    <button id="btnGuardar">
+                                        <img src="~/Images/Areas/Modules/save-file-option.png" />
+                                        <span>Guardar Registro</span>
+                                    </button>
+                                </div>*@
+                                <div class="search-option">
+                                    <button id="btnVolver">
+                                        <img src="~/Images/Areas/Modules/search_filter.png" />
+                                        <span>Regresar</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="data-archivos-input-meler">
+
+                        </div>
+                        @*<div class="data-det-input-meler">
+
+                        </div>*@
+                    </div>
+                    @*<div class="contains-search">
+                            <div class="search-filter">
+
+                            </div>
+                        </div>*@
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Popup Register && Modify-->
+<div class="popup">
+    <div class="popup-content" style="height: 500px">
+        <div class="popup-header">
+            <div class="popup-header-title">
+                <span class="title-span">Lista de Operaciones</span>
+            </div>
+            <div class="popup-header-close">
+                <button class="btnClosePopup">
+                    <img src="~/Images/Areas/Modules/close_16.png" />
+                </button>
+            </div>
+        </div>
+        <div class="popup-body">
+            <button id="BValue" style="display: none; justify-content: flex-start; margin-right: 5px; outline: none; background: rgb(26, 179, 148); border: 1px solid rgb(28, 132, 198); border-radius: 4px; padding: 4px 10px; transition: all .6s ease; width: 100% ">
+                <span id="SValue" style="color: white; width: 100%; text-align: center"></span>
+            </button>
+            <div class="popup-body-block">
+                <div class="data-det-input-meler">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="popup-footer">
+            <div class="popup-footer-block">
+                <button id="btnGuardar" class="btnCancel">
+                    <img src="~/Images/Areas/Modules/ic_accept.png" style="width: 16px; height: 16px; margin-top: 0px" />
+                    <span>Guardar Registro</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/Areas/Actorial/CalculoVariable.js"></script>

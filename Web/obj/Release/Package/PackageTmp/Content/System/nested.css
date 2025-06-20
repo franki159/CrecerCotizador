@@ -1,0 +1,11 @@
+﻿.tr-nested{
+    padding:20px 15px;
+}
+
+.tr-nested .module-content-pagination{
+    justify-content:space-between !important;
+}
+
+.tr-nested .module-content-pagination button{
+    width:auto !important;
+}

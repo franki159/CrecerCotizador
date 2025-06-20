@@ -65,3 +65,20 @@ D:\Apps\Mealer\System.Persistence.Connection\obj\Debug\System.Persistence.Connec
 D:\Apps\Mealer\System.Persistence.Connection\obj\Debug\System.Persistence.Connection.csproj.CopyComplete
 D:\Apps\Mealer\System.Persistence.Connection\obj\Debug\System.Persistence.Connection.dll
 D:\Apps\Mealer\System.Persistence.Connection\obj\Debug\System.Persistence.Connection.pdb
+E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Persistence.Connection\bin\Debug\System.Persistence.Connection.dll.config
+E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Persistence.Connection\bin\Debug\System.Persistence.Connection.dll
+E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Persistence.Connection\bin\Debug\System.Persistence.Connection.pdb
+E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Persistence.Connection\bin\Debug\ExcelDataReader.DataSet.dll
+E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Persistence.Connection\bin\Debug\ExcelDataReader.dll
+E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Persistence.Connection\bin\Debug\Oracle.ManagedDataAccess.dll
+E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Persistence.Connection\bin\Debug\System.Persistence.Core.dll
+E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Persistence.Connection\bin\Debug\System.Persistence.Core.pdb
+E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Persistence.Connection\bin\Debug\System.Persistence.Core.dll.config
+E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Persistence.Connection\bin\Debug\ExcelDataReader.xml
+E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Persistence.Connection\bin\Debug\ExcelDataReader.DataSet.xml
+E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Persistence.Connection\obj\Debug\System.Persistence.Connection.csproj.AssemblyReference.cache
+E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Persistence.Connection\obj\Debug\System.Persistence.Connection.csproj.CoreCompileInputs.cache
+E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Persistence.Connection\obj\Debug\System.Persistence.Connection.csproj.CopyComplete
+E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Persistence.Connection\obj\Debug\System.Persistence.Connection.dll
+E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Persistence.Connection\obj\Debug\System.Persistence.Connection.pdb
+E:\Bussiness\EMPRESAS\CRECER\Fuentes\CrecerCotizador\System.Persistence.Connection\bin\Debug\oracle.dataaccess (2).dll

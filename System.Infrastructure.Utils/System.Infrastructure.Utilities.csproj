@@ -37,9 +37,8 @@
     <Reference Include="DocumentFormat.OpenXml, Version=2.13.0.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
       <HintPath>..\packages\DocumentFormat.OpenXml.2.13.0\lib\net40\DocumentFormat.OpenXml.dll</HintPath>
     </Reference>
-    <Reference Include="oracle.dataaccess, Version=10.2.0.100, Culture=neutral, PublicKeyToken=89b483f429c47342">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\SISPOC\BUENO\Sispoc.2023.DEV\SispocSystem\packages\oracle.dataaccess.dll</HintPath>
+    <Reference Include="oracle.dataaccess %282%29">
+      <HintPath>C:\Users\chara\Downloads\oracle.dataaccess (2).dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
